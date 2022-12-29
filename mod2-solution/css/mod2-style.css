@@ -22,7 +22,7 @@ body {
 
 .item { /*one of the 3 big blocks for menu items*/
   position: relative;
-  border: 3px solid black;
+  border: 1px solid black;
   background-color: #c3c3c3;
   margin: 15px; /*margin around each block*/
   padding: 20px;
@@ -37,8 +37,8 @@ body {
 
 .section-title { /* class for item title */
   position: absolute; /*absolute positioning since we want its position to be based on .item*/
-  border-bottom: 3px solid black; /*only bottom and left border to make it look cleaner*/
-  border-left: 3px solid black;
+  border-bottom: 1px solid black; /*only bottom and left border to make it look cleaner*/
+  border-left: 1px solid black;
 
   width: 100px;
   height: 30px;
