@@ -1,0 +1,156 @@
+
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  /*can also set default margin, padding of all elements*/
+}
+
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*******Specific classes*******/
+.menu-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+}
+
+.item { /*one of the 3 big blocks for menu items*/
+  position: relative;
+  border: 3px solid black;
+  background-color: #c3c3c3;
+  margin: 15px; /*margin around each block*/
+  padding: 20px;
+  /*height: 150px; NOTE don't specify height to allow for even padding*/
+}
+
+.item p { /*paragraph text that's a CHILD of a .item*/
+  margin-top: 20px; /*start 20px down*/
+  text-align: left;
+  top: 0;
+}
+
+.section-title { /* class for item title */
+  position: absolute; /*absolute positioning since we want its position to be based on .item*/
+  border-bottom: 3px solid black; /*only bottom and left border to make it look cleaner*/
+  border-left: 3px solid black;
+
+  width: 100px;
+  height: 30px;
+
+  right: 0px; /*position in upper right corner of parent item*/
+  top: 0px;
+
+  text-align: center;
+  padding: 3px 10px;
+}
+
+/* change background color for each section title*/
+#section-one { /*first menu item only*/
+  background-color: rgb(255, 219, 176);
+}
+
+#section-two { /*first menu item only*/
+  background-color: rgb(179, 74, 106);
+  color: white;
+}
+
+#section-three { /*first menu item only*/
+  background-color: rgb(233, 203, 106);
+}
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left; /* will always left-align */
+    border: 2px black; 
+    position: relative; /*??*/
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 2px black;
+    position: relative; /*??*/
+
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
